@@ -12,6 +12,7 @@ JavaKilg.new = function(obj) {
   };
   _.set = function(a, b) {
     this.contents[a] = b;
+    return this;
   };
   _.call = function(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z) {
     return this.contents[a](b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z);
@@ -21,6 +22,7 @@ JavaKilg.new = function(obj) {
   };
   _.set2D = function(a, b, c) {
     this.contents[a][b] = c;
+    return this;
   };
   _.call2D = function(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, _a) {
     return this.contents[a][b](c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, _a);
@@ -30,6 +32,7 @@ JavaKilg.new = function(obj) {
   };
   _.set3D = function(a, b, c, d) {
     this.contents[a][b][c] = d;
+    return this;
   };
   _.call3D = function(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, _a, _b) {
     return this.contents[a][b][c](d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, _a, _b);
