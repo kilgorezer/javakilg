@@ -1,3 +1,3 @@
-# js.kilgorezer.com
+# javakilg.js.org
 JavaKilg.js Information Repo
-# Go to js.kilgorezer.com for more info.
+# Go to JavaKilg.js.org for more info.
