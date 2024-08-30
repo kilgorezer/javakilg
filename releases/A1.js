@@ -3,6 +3,7 @@ const JavaKilg = Object.create(null);
 JavaKilg.toString = function() {
   return "[JavaKilg VA1]";
 };
+JavaKilg.constructor = globalThis;
 JavaKilg.new = function(obj) {
   var _ = Object.create(null);
   _.contents = obj;
@@ -63,3 +64,23 @@ JavaKilg.Arr3D = function(x, y, z) {
   }
   return _;
 }
+JavaKilg.local = Object.create(null);
+JavaKilg.local.toString = JavaKilg.toString;
+JavaKilg.local.get = function(a) {
+  return localStorage.getItem(a);
+};
+JavaKilg.local.set = function(a, b) {
+  localStorage.setItem(a, b);
+  return this;
+};
+JavaKilg.local.constructor = JavaKilg.new;
+JavaKilg.session = Object.create(null);
+JavaKilg.session.toString = JavaKilg.toString;
+JavaKilg.session.get = function(a) {
+  return sessionStorage.getItem(a);
+};
+JavaKilg.session.set = function(a, b) {
+  sessionStorage.setItem(a, b);
+  return this;
+};
+JavaKilg.session.constructor = JavaKilg.new;
