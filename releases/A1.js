@@ -73,6 +73,10 @@ JavaKilg.local.set = function(a, b) {
   localStorage.setItem(a, b);
   return this;
 };
+JavaKilg.local.del = function(a) {
+  localStorage.removeItem(a);
+  return this;
+}
 JavaKilg.local.constructor = JavaKilg.new;
 JavaKilg.session = Object.create(null);
 JavaKilg.session.toString = JavaKilg.toString;
@@ -83,4 +87,8 @@ JavaKilg.session.set = function(a, b) {
   sessionStorage.setItem(a, b);
   return this;
 };
+JavaKilg.session.del = function(a) {
+  sessionStorage.removeItem(a);
+  return this;
+}
 JavaKilg.session.constructor = JavaKilg.new;
