@@ -18,19 +18,19 @@ JavaKilg.new = function(obj) {
   };
   _.2Dget = function(a, b) {
     return this.contents[a][b];
-  }
+  };
   _.2Dset = function(a, b, c) {
     this.contents[a][b] = c;
-  }
+  };
   _.2Dcall = function(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, _a) {
     return this.contents[a][b](c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, _a);
   };
   _.3Dget = function(a, b, c) {
     return this.contents[a][b][c];
-  }
+  };
   _.3Dset = function(a, b, c, d) {
     this.contents[a][b][c] = d;
-  }
+  };
   _.3Dcall = function(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, _a, _b) {
     return this.contents[a][b][c](d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, _a, _b);
   };
