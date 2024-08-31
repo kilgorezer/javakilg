@@ -1,4 +1,4 @@
-// JavaKilg Alpha Version 1
+// JavaKilg Alpha Version 2
 const JavaKilg = Object.create(null);
 JavaKilg.toString = function() {
   return "[JavaKilg VA2]";
